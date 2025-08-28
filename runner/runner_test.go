@@ -88,8 +88,6 @@ func TestRunner(t *testing.T) {
 			require.Nil(t, err)
 
 			err = r.process()
-			t.Logf("Expected: %+v \n", r.options.Org)
-			t.Logf("Expected: %+v \n", tt.name)
 			require.Nil(t, err)
 
 			err = r.Close()
